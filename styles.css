@@ -1,0 +1,226 @@
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-style: italic;
+  scroll-behavior: smooth;
+}
+:root{
+  --orange:#ff6600;
+  --white:#fff;
+}
+.hello{
+  width: 100%;
+  height: 100vh;
+  background-image: url(project/IMG-20240327-WA0055.jpg);
+  background-size: cover;
+}
+.nav{
+  width: 100%;
+  height: 50px;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  color: black;
+}
+.hello ul{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+}
+.hello a{
+  color: black;
+}
+.nav h1{
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+.page{
+  position: relative;
+}
+.e{
+  position: absolute;
+  top: 250px;
+  right: 30%;
+}
+.e h1{
+  font-size: 4rem;
+  color: var(--white);
+}
+.e span{
+  color: var(--orange);
+}
+.e h4{
+  font-size: 1.2rem;
+  color: var(--white);
+}
+.e input{
+  width: 150px;
+  height: 50px;
+  background-color: var(--orange);
+  border-radius: 10px;
+  font-size: 1rem;
+  border-color: transparent;
+  margin-top: 30px;
+  cursor: pointer;
+}
+.about{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: var(--white);
+  color: black;
+  align-items: center;
+}
+.about .img img{
+  height: 500px;
+  width: 400px;
+  border-radius: 20px;
+}
+.info{
+  width: 40%;
+  margin-left: -150px;
+}
+.info h4{
+  color: var(--orange);
+  font-size: 1.3rem;
+}
+.info h2{
+  font-size: 1.6rem;
+  margin-block: 20px;
+}
+.info p{
+  line-height: 20px;
+  font-weight: lighter;
+}
+.info input{
+  width: 150px;
+  height: 50px;
+  background-color: var(--orange);
+  border-radius: 10px;
+  font-size: 1rem;
+  border-color: transparent;
+  margin-top: 30px;
+  cursor: pointer;
+}
+.coursera{
+  width: 100%;
+  height: 100vh;
+}
+.coursera nav{
+  width: 100%;
+  height: 80px;
+  background-color: var(--white);
+}
+.coursera nav h1{
+  position: relative;
+  font-size: 3rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+.coursera nav h1::before{
+  content: "";
+  width: 250px;
+  height: 4px;
+  background-color: var(--orange);
+  position: absolute;
+  margin-left: -50px;
+  bottom: -6px;
+}
+.coursera .webs{
+  display: grid;
+  grid-template-columns: repeat(auto-fill , minmax(300px , 1fr));
+  flex-wrap: wrap;
+  max-width: 1500px;
+  justify-content: space-around;
+  background-color: #eee;
+  height: calc(100vh - 80px);
+}
+.coursera .webs .web img{
+  width: 250px;
+  height: auto;
+  border-radius: 20%;
+  margin: 30px;
+}
+.coursera .webs .web{
+  position: relative;
+}
+.coursera .webs .web h1{
+  position: absolute;
+  top: 100px;
+  right: 150PX;
+  color: var(--white);
+}
+.content{
+  background-image: url(project/IMG-20240327-WA0056.jpg);
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+  position: relative;
+}
+.content::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.2); 
+}
+.head{
+  text-align: center;
+  height: 80px;
+  color: var(--orange);
+}
+.body{
+  display: grid;
+  grid-template-columns: repeat(auto-fill , minmax(300px , 1fr));
+  width: 100%;
+  height: 420px;
+  color: var(--white);
+  position: relative;
+}
+.body .left{
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  margin-left: 80px;
+  width: 100%;
+}
+.body .left p{
+  font-size: 1.2rem;
+  line-height: 23px;
+}
+.body .left span{
+  color: var(--orange);
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+.body .left ul{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.body .right{
+position: absolute;
+right: 150px;
+display: flex;
+flex-direction: column;
+gap: 50px;
+}
+.body .right input{
+  width: 280px;
+  height: 40px;
+  border-radius: 60px;
+  padding: 15px;
+}
